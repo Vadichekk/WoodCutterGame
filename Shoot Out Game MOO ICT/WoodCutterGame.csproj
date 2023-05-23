@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{851EAB91-8F66-4E83-8415-45D4515B4BE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WoodCutterGame</RootNamespace>
+    <AssemblyName>WoodCutterGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ammo-Image.png" />
+    <Content Include="Resources\B.png" />
+    <Content Include="Resources\B1.png" />
+    <None Include="Resources\Trees2023.png" />
+    <None Include="Resources\R8L.png" />
+    <None Include="Resources\R8.png" />
+    <None Include="Resources\R7L.png" />
+    <None Include="Resources\R7.png" />
+    <None Include="Resources\R6L.png" />
+    <None Include="Resources\R6.png" />
+    <None Include="Resources\R5L.png" />
+    <None Include="Resources\R5.png" />
+    <None Include="Resources\R4L.png" />
+    <None Include="Resources\R4.png" />
+    <None Include="Resources\R3L.png" />
+    <None Include="Resources\R3.png" />
+    <None Include="Resources\R2L.png" />
+    <None Include="Resources\R2.png" />
+    <None Include="Resources\R1L.png" />
+    <None Include="Resources\R1.png" />
+    <None Include="Resources\O41.png" />
+    <None Include="Resources\O5.png" />
+    <None Include="Resources\B11.png" />
+    <Content Include="Resources\B2.png" />
+    <None Include="Resources\B21.png" />
+    <Content Include="Resources\B3.png" />
+    <None Include="Resources\B31.png" />
+    <Content Include="Resources\B4.png" />
+    <None Include="Resources\B5.png" />
+    <None Include="Resources\B41.png" />
+    <None Include="Resources\Cutter.png" />
+    <Content Include="Resources\D1.png" />
+    <None Include="Resources\D11.png" />
+    <Content Include="Resources\D1L.png" />
+    <None Include="Resources\D1L1.png" />
+    <None Include="Resources\D2.png" />
+    <None Include="Resources\D2L.png" />
+    <None Include="Resources\D3.png" />
+    <None Include="Resources\D3L.png" />
+    <None Include="Resources\D4.png" />
+    <None Include="Resources\D4L.png" />
+    <None Include="Resources\D5.png" />
+    <None Include="Resources\D5L.png" />
+    <None Include="Resources\D6.png" />
+    <None Include="Resources\D6L.png" />
+    <None Include="Resources\D7.png" />
+    <None Include="Resources\D7L.png" />
+    <None Include="Resources\F1.png" />
+    <None Include="Resources\F1L.png" />
+    <None Include="Resources\F2.png" />
+    <None Include="Resources\F2L.png" />
+    <None Include="Resources\F3.png" />
+    <None Include="Resources\F3L.png" />
+    <None Include="Resources\F4.png" />
+    <None Include="Resources\F4L.png" />
+    <None Include="Resources\F5.png" />
+    <None Include="Resources\F5L.png" />
+    <None Include="Resources\F6.png" />
+    <None Include="Resources\F6L.png" />
+    <None Include="Resources\F7.png" />
+    <None Include="Resources\F7L.png" />
+    <None Include="Resources\I1.png" />
+    <None Include="Resources\I1L.png" />
+    <None Include="Resources\I2.png" />
+    <None Include="Resources\I2L.png" />
+    <None Include="Resources\I3.png" />
+    <None Include="Resources\I3L.png" />
+    <None Include="Resources\I4.png" />
+    <None Include="Resources\I4L.png" />
+    <None Include="Resources\I5.png" />
+    <None Include="Resources\I5L.png" />
+    <Content Include="Resources\O.png" />
+    <Content Include="Resources\O1.png" />
+    <None Include="Resources\O11.png" />
+    <Content Include="Resources\O2.png" />
+    <None Include="Resources\O21.png" />
+    <Content Include="Resources\O3.png" />
+    <None Include="Resources\O31.png" />
+    <Content Include="Resources\O4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
